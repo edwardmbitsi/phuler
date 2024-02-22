@@ -1,0 +1,2216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+
+    <title>Phuler &#8211; WooCommerce WordPress Theme</title>
+    <meta name='robots' content='noindex, nofollow' />
+    <link rel='dns-prefetch' href='//stats.wp.com' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel="alternate" type="application/rss+xml" title="Phuler &raquo; Feed" href="https://thethemedemo.com/phuler/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Phuler &raquo; Comments Feed" href="https://thethemedemo.com/phuler/comments/feed/" />
+    <script>
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "concatemoji": "https:\/\/thethemedemo.com\/phuler\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.3"
+            }
+        };
+        /*! This file is auto-generated */
+        ! function(i, n) {
+            var o, s, e;
+
+            function c(e) {
+                try {
+                    var t = {
+                        supportTests: e,
+                        timestamp: (new Date).valueOf()
+                    };
+                    sessionStorage.setItem(o, JSON.stringify(t))
+                } catch (e) {}
+            }
+
+            function p(e, t, n) {
+                e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+                var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+                    r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+                return t.every(function(e, t) {
+                    return e === r[t]
+                })
+            }
+
+            function u(e, t, n) {
+                switch (t) {
+                    case "flag":
+                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+                    case "emoji":
+                        return !n(e, "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff", "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")
+                }
+                return !1
+            }
+
+            function f(e, t, n) {
+                var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"),
+                    a = r.getContext("2d", {
+                        willReadFrequently: !0
+                    }),
+                    o = (a.textBaseline = "top", a.font = "600 32px Arial", {});
+                return e.forEach(function(e) {
+                    o[e] = t(a, e, n)
+                }), o
+            }
+
+            function t(e) {
+                var t = i.createElement("script");
+                t.src = e, t.defer = !0, i.head.appendChild(t)
+            }
+            "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = {
+                everything: !0,
+                everythingExceptFlag: !0
+            }, e = new Promise(function(e) {
+                i.addEventListener("DOMContentLoaded", e, {
+                    once: !0
+                })
+            }), new Promise(function(t) {
+                var n = function() {
+                    try {
+                        var e = JSON.parse(sessionStorage.getItem(o));
+                        if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
+                    } catch (e) {}
+                    return null
+                }();
+                if (!n) {
+                    if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
+                        var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));",
+                            r = new Blob([e], {
+                                type: "text/javascript"
+                            }),
+                            a = new Worker(URL.createObjectURL(r), {
+                                name: "wpTestEmojiSupports"
+                            });
+                        return void(a.onmessage = function(e) {
+                            c(n = e.data), a.terminate(), t(n)
+                        })
+                    } catch (e) {}
+                    c(n = f(s, u, p))
+                }
+                t(n)
+            }).then(function(e) {
+                for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
+                n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function() {
+                    n.DOMReady = !0
+                }
+            }).then(function() {
+                return e
+            }).then(function() {
+                var e;
+                n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
+            }))
+        }((window, document), window._wpemojiSettings);
+    </script>
+    <style>
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-library-css' href='https://thethemedemo.com/phuler/wp-includes/css/dist/block-library/style.min.css?ver=6.3.3' media='all' />
+    <style id='classic-theme-styles-inline-css'>
+        /*! This file is auto-generated */
+
+        .wp-block-button__link {
+            color: #fff;
+            background-color: #32373c;
+            border-radius: 9999px;
+            box-shadow: none;
+            text-decoration: none;
+            padding: calc(.667em + 2px) calc(1.333em + 2px);
+            font-size: 1.125em
+        }
+
+        .wp-block-file__button {
+            background: #32373c;
+            color: #fff;
+            text-decoration: none
+        }
+    </style>
+    <style id='global-styles-inline-css'>
+        body {
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+        }
+
+        :where(.is-layout-flex) {
+            gap: 0.5em;
+        }
+
+        :where(.is-layout-grid) {
+            gap: 0.5em;
+        }
+
+        body .is-layout-flow>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        body .is-layout-flow>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        body .is-layout-flow>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        body .is-layout-constrained>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        body .is-layout-constrained>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+            max-width: var(--wp--style--global--content-size);
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        body .is-layout-constrained>.alignwide {
+            max-width: var(--wp--style--global--wide-size);
+        }
+
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        body .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        body .is-layout-flex>* {
+            margin: 0;
+        }
+
+        body .is-layout-grid {
+            display: grid;
+        }
+
+        body .is-layout-grid>* {
+            margin: 0;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        .wp-block-navigation a:where(:not(.wp-element-button)) {
+            color: inherit;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        .wp-block-pullquote {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+    </style>
+    <link rel='stylesheet' id='redux-extendify-styles-css' href='https://thethemedemo.com/phuler/wp-content/plugins/redux-framework/redux-core/assets/css/extendify-utilities.css?ver=4.4.8' media='all' />
+    <link rel='stylesheet' id='contact-form-7-css' href='https://thethemedemo.com/phuler/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.2' media='all' />
+    <link rel='stylesheet' id='woocommerce-layout-css' href='https://thethemedemo.com/phuler/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=8.2.1' media='all' />
+    <link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://thethemedemo.com/phuler/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=8.2.1' media='only screen and (max-width: 768px)' />
+    <link rel='stylesheet' id='woocommerce-general-css' href='https://thethemedemo.com/phuler/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=8.2.1' media='all' />
+    <style id='woocommerce-inline-inline-css'>
+        .woocommerce form .form-row .required {
+            visibility: visible;
+        }
+    </style>
+    <link rel='stylesheet' id='phuler-font-css' href='https://fonts.googleapis.com/css?family=Rubik%3A300%2C400%2C500%2C700%7CPlayfair%2BDisplay%3A400%2C700&#038;subset=latin%2Clatin-ext&#038;ver=6.3.3' media='all' />
+    <link rel='stylesheet' id='bootstrap-css' href='https://thethemedemo.com/phuler/wp-content/themes/phuler/css/bootstrap.min.css?ver=6.3.3' media='all' />
+    <link rel='stylesheet' id='font-awesome-css' href='https://thethemedemo.com/phuler/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0' media='all' />
+    <link rel='stylesheet' id='ionicons-css' href='https://thethemedemo.com/phuler/wp-content/themes/phuler/css/ionicons.min.css?ver=6.3.3' media='all' />
+    <link rel='stylesheet' id='simple-line-icons-css' href='https://thethemedemo.com/phuler/wp-content/themes/phuler/css/simple-line-icons.css?ver=6.3.3' media='all' />
+    <link rel='stylesheet' id='magnific-popup-css' href='https://thethemedemo.com/phuler/wp-content/themes/phuler/css/magnific-popup.css?ver=6.3.3' media='all' />
+    <link rel='stylesheet' id='animate-css' href='https://thethemedemo.com/phuler/wp-content/themes/phuler/css/animate.css?ver=6.3.3' media='all' />
+    <link rel='stylesheet' id='slick-css' href='https://thethemedemo.com/phuler/wp-content/themes/phuler/css/slick.css?ver=6.3.3' media='all' />
+    <link rel='stylesheet' id='owl-carousels-css' href='https://thethemedemo.com/phuler/wp-content/themes/phuler/css/owl.carousel.min.css?ver=6.3.3' media='all' />
+    <link rel='stylesheet' id='mean-menu-css' href='https://thethemedemo.com/phuler/wp-content/themes/phuler/css/meanmenu.min.css?ver=6.3.3' media='all' />
+    <link rel='stylesheet' id='phuler-default-style-css' href='https://thethemedemo.com/phuler/wp-content/themes/phuler/css/theme-default.css?ver=6.3.3' media='all' />
+    <link rel='stylesheet' id='phuler-blog-style-css' href='https://thethemedemo.com/phuler/wp-content/themes/phuler/css/blog-post.css?ver=6.3.3' media='all' />
+    <link rel='stylesheet' id='phuler-main-style-css' href='https://thethemedemo.com/phuler/wp-content/themes/phuler/css/theme-style.css?ver=6.3.3' media='all' />
+    <link rel='stylesheet' id='phuler-style-css' href='https://thethemedemo.com/phuler/wp-content/themes/phuler/style.css?ver=6.3.3' media='all' />
+    <style id='phuler-style-inline-css'>
+        .page-wrapper {
+            padding-top: 00px;
+        }
+
+        .page-wrapper {
+            padding-bottom: 00px;
+        }
+
+        @media (max-width: 767px) {}
+    </style>
+    <link rel='stylesheet' id='phuler-responsive-css' href='https://thethemedemo.com/phuler/wp-content/themes/phuler/css/responsive.css?ver=6.3.3' media='all' />
+    <link rel='stylesheet' id='tawcvs-frontend-css' href='https://thethemedemo.com/phuler/wp-content/plugins/variation-swatches-for-woocommerce/assets/css/frontend.css?ver=2.2.0' media='all' />
+    <link rel='stylesheet' id='elementor-icons-css' href='https://thethemedemo.com/phuler/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.23.0' media='all' />
+    <link rel='stylesheet' id='elementor-frontend-css' href='https://thethemedemo.com/phuler/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.16.6' media='all' />
+    <link rel='stylesheet' id='swiper-css' href='https://thethemedemo.com/phuler/wp-content/plugins/elementor/assets/lib/swiper/css/swiper.min.css?ver=5.3.6' media='all' />
+    <link rel='stylesheet' id='elementor-post-662-css' href='https://thethemedemo.com/phuler/wp-content/uploads/elementor/css/post-662.css?ver=1698224179' media='all' />
+    <link rel='stylesheet' id='font-awesome-5-all-css' href='https://thethemedemo.com/phuler/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.16.6' media='all' />
+    <link rel='stylesheet' id='font-awesome-4-shim-css' href='https://thethemedemo.com/phuler/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.16.6' media='all' />
+    <link rel='stylesheet' id='elementor-global-css' href='https://thethemedemo.com/phuler/wp-content/uploads/elementor/css/global.css?ver=1698224179' media='all' />
+    <link rel='stylesheet' id='elementor-post-109-css' href='https://thethemedemo.com/phuler/wp-content/uploads/elementor/css/post-109.css?ver=1698227754' media='all' />
+    <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPlayfair+Display%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRubik%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.3.3'
+        media='all' />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <script src='https://thethemedemo.com/phuler/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2' id='wp-polyfill-inert-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11' id='regenerator-runtime-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1' id='wp-hooks-js'></script>
+    <script src='https://stats.wp.com/w.js?ver=202408' id='woo-tracks-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/themes/phuler/js/slick.min.js?ver=1.1.7' id='slick-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/themes/phuler/js/owl.carousel.min.js?ver=2.2.1' id='owl-carousels-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.16.6' id='font-awesome-4-shim-js'></script>
+    <link rel="https://api.w.org/" href="https://thethemedemo.com/phuler/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://thethemedemo.com/phuler/wp-json/wp/v2/pages/109" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thethemedemo.com/phuler/xmlrpc.php?rsd" />
+    <meta name="generator" content="WordPress 6.3.3" />
+    <meta name="generator" content="WooCommerce 8.2.1" />
+    <link rel="canonical" href="https://thethemedemo.com/phuler/" />
+    <link rel='shortlink' href='https://thethemedemo.com/phuler/' />
+    <link rel="alternate" type="application/json+oembed" href="https://thethemedemo.com/phuler/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthethemedemo.com%2Fphuler%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://thethemedemo.com/phuler/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthethemedemo.com%2Fphuler%2F&#038;format=xml" />
+    <meta name="generator" content="Redux 4.4.8" />
+    <script type="text/javascript">
+        var ajaxurl = 'https://thethemedemo.com/phuler/wp-admin/admin-ajax.php';
+    </script>
+    <noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+    <meta name="generator" content="Elementor 3.16.6; features: e_dom_optimization, e_optimized_assets_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+    <link rel="icon" href="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/cropped-logo-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/cropped-logo-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/cropped-logo-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/cropped-logo-270x270.png" />
+    <style id="phuler_opt-dynamic-css" title="dynamic-css" class="redux-options-output">
+        .footer-wrapper.default-footer-wrapper .default-footer {
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+    </style>
+</head>
+
+<body class="home page-template page-template-page-full-width page-template-page-full-width-php page page-id-109 theme-phuler woocommerce-no-js wide-layout-active header-default-style-one elementor-default elementor-kit-662 elementor-page elementor-page-109">
+
+    <div id="page" class="site site-wrapper wide-layout">
+        <div id="phuler">
+
+            <header class="header-default main-header clearfix ">
+                <div class="header-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+
+                                <div class="header-bottom header-menu-wrap logo-left ">
+                                    <!-- Start Logo Wrapper  -->
+                                    <div class="site-title">
+
+                                        <div class="logo">
+                                            <a href="https://thethemedemo.com/phuler/" title="Phuler" rel="home">
+
+	                                	
+	                                    	<img src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/logo.png" data-at2x="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/logo.png" alt="Phuler">
+
+											                                </a>
+                                        </div>
+
+                                    </div>
+                                    <!-- End Logo Wrapper -->
+                                    <!-- Start Primary Menu Wrapper -->
+                                    <div class="primary-nav-wrap nav-horizontal default-style-one">
+                                        <div class="header-bottom-right">
+                                            <div class="main-menu">
+                                                <nav>
+                                                    <ul id="menu-main-menu" class="menu">
+                                                        <li id="menu-item-114" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-109 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-114"><a href="https://thethemedemo.com/phuler/" aria-current="page">Home</a>
+                                                            <ul class="sub-menu">
+                                                                <li id="menu-item-487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-109 current_page_item menu-item-487"><a href="https://thethemedemo.com/phuler/" aria-current="page">home version 1</a></li>
+                                                                <li id="menu-item-291" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-291"><a href="https://thethemedemo.com/phuler/home-2/">home version 2</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li id="menu-item-290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-290"><a href="https://thethemedemo.com/phuler/about-us/">About us</a></li>
+                                                        <li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13"><a href="https://thethemedemo.com/phuler/shop/">Shop</a></li>
+                                                        <li id="menu-item-113" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-113"><a href="https://thethemedemo.com/phuler/blog/">Blog</a>
+                                                            <ul class="sub-menu">
+                                                                <li id="menu-item-610" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-610"><a href="https://thethemedemo.com/phuler/spirit-of-adventure-rises-6/">Standard post</a></li>
+                                                                <li id="menu-item-611" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-611"><a href="https://thethemedemo.com/phuler/spirit-of-adventure-rises-5/">audio post</a></li>
+                                                                <li id="menu-item-617" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-617"><a href="https://thethemedemo.com/phuler/55/">video post</a></li>
+                                                                <li id="menu-item-612" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-612"><a href="https://thethemedemo.com/phuler/lorem-ipsum-dolor-sit-amet-co-adipisicing-elit-sed-do-eiusmod-tempor-incididunt-ut-labore-et-dolore-magna-aliqua/">quote post</a></li>
+                                                                <li id="menu-item-613" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-613"><a href="https://thethemedemo.com/phuler/spirit-of-adventure-rises-4/">gallery post</a></li>
+                                                                <li id="menu-item-614" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-614"><a href="https://thethemedemo.com/phuler/92/">link post</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li id="menu-item-399" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-399"><a href="#">Pages</a>
+                                                            <ul class="sub-menu">
+                                                                <li id="menu-item-489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-489"><a href="https://thethemedemo.com/phuler/about-us/">About us</a></li>
+                                                                <li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11"><a href="https://thethemedemo.com/phuler/checkout/">Checkout</a></li>
+                                                                <li id="menu-item-582" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-582"><a href="https://thethemedemo.com/phuler/product/evergreen-candytuft/">Single Product</a></li>
+                                                                <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12"><a href="https://thethemedemo.com/phuler/cart/">Cart</a></li>
+                                                                <li id="menu-item-408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-408"><a href="https://thethemedemo.com/phuler/wishlist/">wishlist</a></li>
+                                                                <li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10"><a href="https://thethemedemo.com/phuler/my-account/">My account</a></li>
+                                                                <li id="menu-item-490" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-490"><a href="https://thethemedemo.com/phuler/my-account/">login / register</a></li>
+                                                                <li id="menu-item-488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-488"><a href="https://thethemedemo.com/phuler/contact/">Contact</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li id="menu-item-400" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-400"><a href="https://thethemedemo.com/phuler/contact/">Contact</a></li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+
+                                            <div class="header-cart">
+                                                <a href="https://thethemedemo.com/phuler/cart/">
+                                                    <div class="cart-icon">
+                                                        <i class="ion-bag"></i>
+                                                        <span class="count-style"><span class="mini_cart_count">0</span></span>
+                                                    </div>
+                                                    <div class="cart-text">
+                                                        <span class="digit">My Cart</span>
+                                                        <span><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>0.00</bdi>
+                                                        </span>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                                <div class="shopping-cart-content">
+                                                    <div class="widget_shopping_cart_content"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Primary Menu Wrapper -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu  -->
+                        <div class="mobile-menu"></div>
+                    </div>
+                </div>
+            </header>
+
+
+
+            <div id="content" class="site-content">
+                <div class="page-wrapper clear">
+                    <div data-elementor-type="wp-post" data-elementor-id="109" class="elementor elementor-109">
+                        <section class="elementor-section elementor-top-section elementor-element elementor-element-cb67933 elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="cb67933" data-element_type="section"
+                            data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+                            <div class="elementor-container elementor-column-gap-no">
+                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9740712" data-id="9740712" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-2b49def elementor-widget elementor-widget-phuler-slider" data-id="2b49def" data-element_type="widget" data-widget_type="phuler-slider.default">
+                                            <div class="elementor-widget-container">
+                                                <!-- Hero Section Start -->
+                                                <div class="slider-section bg-gray fix">
+
+                                                    <div class="slider-area">
+                                                        <div class="slider-active owl-dot-style owl-carousel">
+                                                            <div class="single-slider pt-175 pb-250 bg-img" style="background-image:url(https://thethemedemo.com/phuler/wp-content/uploads/2018/08/slider-1.jpg);">
+                                                                <div class="container">
+                                                                    <div class="slider-content slider-animated-1">
+                                                                        <h3 class="animated">New Arrivals</h3>
+                                                                        <h1 class="animated">For Mother’s Day!</h1>
+                                                                        <h5 class="animated">Exclusive Offer -10% Off This Week</h5>
+                                                                        <div class="slider-btn mt-45"><a class="animated" href="#" rel="nofollow"> Shop Now</a></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="single-slider pt-175 pb-250 bg-img" style="background-image:url(https://thethemedemo.com/phuler/wp-content/uploads/2018/08/slider-2.jpg);">
+                                                                <div class="container">
+                                                                    <div class="slider-content slider-animated-1">
+                                                                        <h3 class="animated">New Arrivals</h3>
+                                                                        <h1 class="animated">For Mother’s Day!</h1>
+                                                                        <h5 class="animated">Exclusive Offer -10% Off This Week</h5>
+                                                                        <div class="slider-btn mt-45"><a class="animated" href="#" rel="nofollow"> Shop Now</a></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- Hero Section End -->
+
+                                                <script type="text/javascript">
+                                                    (function($) {
+
+                                                        var _arrows_set = true;
+                                                        var _autoplay_set = true;
+                                                        var _autoplay_speed = 5000;
+                                                        var _dots_set = true;
+
+
+                                                        $('.slider-active').owlCarousel({
+                                                            loop: true,
+                                                            nav: _arrows_set,
+                                                            autoplay: _autoplay_set,
+                                                            dots: _dots_set,
+                                                            autoplayTimeout: _autoplay_speed,
+                                                            animateOut: 'fadeOut',
+                                                            animateIn: 'fadeIn',
+                                                            navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                                                            item: 1,
+                                                            responsive: {
+                                                                0: {
+                                                                    items: 1
+                                                                },
+                                                                768: {
+                                                                    items: 1
+                                                                },
+                                                                1000: {
+                                                                    items: 1
+                                                                }
+                                                            }
+                                                        })
+
+
+                                                    })(jQuery);
+                                                </script>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="elementor-section elementor-top-section elementor-element elementor-element-ea86f12 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ea86f12" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-extended">
+                                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6e1151f" data-id="6e1151f" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-1972ae0 elementor-widget elementor-widget-banner-small" data-id="1972ae0" data-element_type="widget" data-widget_type="banner-small.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="banner-area">
+                                                    <div class="banner-wrap">
+                                                        <div class="single-banner img-zoom mb-30">
+                                                            <a href="#">                        <img fetchpriority="high" width="370" height="150" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/banner-1.png" class="attachment-full size-full wp-image-128" alt="" decoding="async" srcset="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/banner-1.png 370w, https://thethemedemo.com/phuler/wp-content/uploads/2018/08/banner-1-300x122.png 300w" sizes="(max-width: 370px) 100vw, 370px" />                    </a>
+                                                            <div class="banner-content">
+                                                                <h4>Camellias</h4> <a href="" rel="nofollow">Shop Now</a> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f69c6af" data-id="f69c6af" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-fc10324 elementor-widget elementor-widget-banner-small" data-id="fc10324" data-element_type="widget" data-widget_type="banner-small.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="banner-area">
+                                                    <div class="banner-wrap">
+                                                        <div class="single-banner img-zoom mb-30">
+                                                            <a href="#">                        <img width="370" height="150" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/banner-2.png" class="attachment-full size-full wp-image-129" alt="" decoding="async" srcset="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/banner-2.png 370w, https://thethemedemo.com/phuler/wp-content/uploads/2018/08/banner-2-300x122.png 300w" sizes="(max-width: 370px) 100vw, 370px" />                    </a>
+                                                            <div class="banner-content">
+                                                                <h4>Bergamot</h4> <a href="" rel="nofollow">Shop Now</a> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-9939370" data-id="9939370" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-a72f6b2 elementor-widget elementor-widget-banner-small" data-id="a72f6b2" data-element_type="widget" data-widget_type="banner-small.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="banner-area">
+                                                    <div class="banner-wrap">
+                                                        <div class="single-banner img-zoom mb-30">
+                                                            <a href="#">                        <img width="370" height="150" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/banner-3.png" class="attachment-large size-large wp-image-130" alt="" decoding="async" srcset="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/banner-3.png 370w, https://thethemedemo.com/phuler/wp-content/uploads/2018/08/banner-3-300x122.png 300w" sizes="(max-width: 370px) 100vw, 370px" />                    </a>
+                                                            <div class="banner-content">
+                                                                <h4>Bottlebrush</h4> <a href="" rel="nofollow">Shop Now</a> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="elementor-section elementor-top-section elementor-element elementor-element-863d222 featured-product elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="863d222" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-extended">
+                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b750b5a" data-id="b750b5a" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-4aafe5e elementor-widget elementor-widget-phuler-product-tabs-addons" data-id="4aafe5e" data-element_type="widget" data-widget_type="phuler-product-tabs-addons.default">
+                                            <div class="elementor-widget-container">
+
+                                                <div class="product-area">
+                                                    <div class="container">
+                                                        <div class="product-top-bar section-border mb-35">
+                                                            <div class="section-title-wrap">
+                                                                <h3 class="section-title section-bg-white">Featured Products</h3>
+                                                            </div>
+                                                            <div class="product-tab-list nav section-bg-white tab_with_icon">
+                                                                <a class="active" href="#homeFeatured_Products1" data-toggle="tab">
+                                                                                Greens                                    </a>
+                                                                <a class="" href="#homeFeatured_Products2" data-toggle="tab">
+                                                                                Various                                    </a>
+                                                                <a class="" href="#homeFeatured_Products3" data-toggle="tab">
+                                                                                Winter                                    </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="tab-content">
+                                                            <div class="tab-pane fade show active" id="homeFeatured_Products1">
+                                                                <div class="featured-product-active owl-carousel product-nav">
+                                                                    <div class="product-item bg-white">
+                                                                        <div class="product-wrapper">
+                                                                            <div class="product-img image-wrap">
+                                                                                <a href="https://thethemedemo.com/phuler/product/dutchmans-breeches/" class="image">
+                                                    
+	<span class="onsale">Sale</span>
+	<img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/3-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                                </a>
+                                                                                <div class="product-action">
+                                                                                    <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                            data-product_id="471"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=471" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                        data-product_id="471" data-product_sku="" aria-label="Add &ldquo;Dutchman&#039;s Breeches&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                    <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="471" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                                        <i class="icon-magnifier-add"></i>
+                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="product-content text-center">
+                                                                                <h4>
+                                                                                    <a href="https://thethemedemo.com/phuler/product/dutchmans-breeches/">Dutchman&#8217;s Breeches</a>
+                                                                                </h4>
+                                                                                <div class="product-price-wrapper">
+
+                                                                                    <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>85.00</bdi>
+                                                                                    </span>
+                                                                                    </del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>80.00</bdi></span></ins></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-item bg-white">
+                                                                        <div class="product-wrapper">
+                                                                            <div class="product-img image-wrap">
+                                                                                <a href="https://thethemedemo.com/phuler/product/polka-dot-plant/" class="image">
+                                                    
+	<span class="onsale">Sale</span>
+	<img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/8-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                                </a>
+                                                                                <div class="product-action">
+                                                                                    <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                            data-product_id="468"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=468" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                        data-product_id="468" data-product_sku="" aria-label="Add &ldquo;Polka Dot Plant&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                    <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="468" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                                        <i class="icon-magnifier-add"></i>
+                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="product-content text-center">
+                                                                                <h4>
+                                                                                    <a href="https://thethemedemo.com/phuler/product/polka-dot-plant/">Polka Dot Plant</a>
+                                                                                </h4>
+                                                                                <div class="product-price-wrapper">
+
+                                                                                    <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>60.00</bdi>
+                                                                                    </span>
+                                                                                    </del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>55.00</bdi></span></ins></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-item bg-white">
+                                                                        <div class="product-wrapper">
+                                                                            <div class="product-img image-wrap">
+                                                                                <a href="https://thethemedemo.com/phuler/product/glory-of-the-snow-2/" class="image">
+                                                    
+	<span class="onsale">Sale</span>
+	<img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/2-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                                </a>
+                                                                                <div class="product-action">
+                                                                                    <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                            data-product_id="167"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=167" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                        data-product_id="167" data-product_sku="" aria-label="Add &ldquo;Glory of the Snow&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                    <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="167" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                                        <i class="icon-magnifier-add"></i>
+                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="product-content text-center">
+                                                                                <h4>
+                                                                                    <a href="https://thethemedemo.com/phuler/product/glory-of-the-snow-2/">Glory of the Snow</a>
+                                                                                </h4>
+                                                                                <div class="product-price-wrapper">
+
+                                                                                    <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>150.00</bdi>
+                                                                                    </span>
+                                                                                    </del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>100.00</bdi></span></ins></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-item bg-white">
+                                                                        <div class="product-wrapper">
+                                                                            <div class="product-img image-wrap">
+                                                                                <a href="https://thethemedemo.com/phuler/product/golden-marguerite/" class="image">
+                                                    
+	<span class="onsale">Sale</span>
+	<img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/6-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                                </a>
+                                                                                <div class="product-action">
+                                                                                    <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                            data-product_id="165"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=165" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                        data-product_id="165" data-product_sku="" aria-label="Add &ldquo;Golden Marguerite&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                    <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="165" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                                        <i class="icon-magnifier-add"></i>
+                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="product-content text-center">
+                                                                                <h4>
+                                                                                    <a href="https://thethemedemo.com/phuler/product/golden-marguerite/">Golden Marguerite</a>
+                                                                                </h4>
+                                                                                <div class="product-price-wrapper">
+
+                                                                                    <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>120.00</bdi>
+                                                                                    </span>
+                                                                                    </del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>100.00</bdi></span></ins></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-item bg-white">
+                                                                        <div class="product-wrapper">
+                                                                            <div class="product-img image-wrap">
+                                                                                <a href="https://thethemedemo.com/phuler/product/glory-of-the-snow/" class="image">
+                                                    <img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/8-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                                </a>
+                                                                                <div class="product-action">
+                                                                                    <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                            data-product_id="163"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=163" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                        data-product_id="163" data-product_sku="" aria-label="Add &ldquo;Glory of the Snow&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                    <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="163" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                                        <i class="icon-magnifier-add"></i>
+                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="product-content text-center">
+                                                                                <h4>
+                                                                                    <a href="https://thethemedemo.com/phuler/product/glory-of-the-snow/">Glory of the Snow</a>
+                                                                                </h4>
+                                                                                <div class="product-price-wrapper">
+
+                                                                                    <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>100.00</bdi>
+                                                                                    </span>
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade " id="homeFeatured_Products2">
+                                                                <div class="featured-product-active owl-carousel product-nav">
+                                                                    <div class="product-item bg-white">
+                                                                        <div class="product-wrapper">
+                                                                            <div class="product-img image-wrap">
+                                                                                <a href="https://thethemedemo.com/phuler/product/flowers-bouquet-pink-2/" class="image">
+                                                    
+	<span class="onsale">Sale</span>
+	<img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/5-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                                </a>
+                                                                                <div class="product-action">
+                                                                                    <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                            data-product_id="474"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=474" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                        data-product_id="474" data-product_sku="" aria-label="Add &ldquo;Flowers Bouquet Pink&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                    <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="474" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                                        <i class="icon-magnifier-add"></i>
+                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="product-content text-center">
+                                                                                <h4>
+                                                                                    <a href="https://thethemedemo.com/phuler/product/flowers-bouquet-pink-2/">Flowers Bouquet Pink</a>
+                                                                                </h4>
+                                                                                <div class="product-price-wrapper">
+
+                                                                                    <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>350.00</bdi>
+                                                                                    </span>
+                                                                                    </del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>320.00</bdi></span></ins></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-item bg-white">
+                                                                        <div class="product-wrapper">
+                                                                            <div class="product-img image-wrap">
+                                                                                <a href="https://thethemedemo.com/phuler/product/glory-of-the-snow-3/" class="image">
+                                                    
+	<span class="onsale">Sale</span>
+	<img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/3-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                                </a>
+                                                                                <div class="product-action">
+                                                                                    <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                            data-product_id="469"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=469" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                        data-product_id="469" data-product_sku="" aria-label="Add &ldquo;Glory of the Snow&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                    <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="469" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                                        <i class="icon-magnifier-add"></i>
+                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="product-content text-center">
+                                                                                <h4>
+                                                                                    <a href="https://thethemedemo.com/phuler/product/glory-of-the-snow-3/">Glory of the Snow</a>
+                                                                                </h4>
+                                                                                <div class="product-price-wrapper">
+
+                                                                                    <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>115.00</bdi>
+                                                                                    </span>
+                                                                                    </del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>110.00</bdi></span></ins></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-item bg-white">
+                                                                        <div class="product-wrapper">
+                                                                            <div class="product-img image-wrap">
+                                                                                <a href="https://thethemedemo.com/phuler/product/flowers-bouquet/" class="image">
+                                                    
+	<span class="onsale">Sale</span>
+	<img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/6-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                                </a>
+                                                                                <div class="product-action">
+                                                                                    <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                            data-product_id="457"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=457" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                        data-product_id="457" data-product_sku="" aria-label="Add &ldquo;Flowers Bouquet&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                    <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="457" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                                        <i class="icon-magnifier-add"></i>
+                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="product-content text-center">
+                                                                                <h4>
+                                                                                    <a href="https://thethemedemo.com/phuler/product/flowers-bouquet/">Flowers Bouquet</a>
+                                                                                </h4>
+                                                                                <div class="product-price-wrapper">
+
+                                                                                    <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>80.00</bdi>
+                                                                                    </span>
+                                                                                    </del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>75.00</bdi></span></ins></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-item bg-white">
+                                                                        <div class="product-wrapper">
+                                                                            <div class="product-img image-wrap">
+                                                                                <a href="https://thethemedemo.com/phuler/product/glory-of-the-snow-2/" class="image">
+                                                    
+	<span class="onsale">Sale</span>
+	<img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/2-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                                </a>
+                                                                                <div class="product-action">
+                                                                                    <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                            data-product_id="167"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=167" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                        data-product_id="167" data-product_sku="" aria-label="Add &ldquo;Glory of the Snow&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                    <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="167" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                                        <i class="icon-magnifier-add"></i>
+                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="product-content text-center">
+                                                                                <h4>
+                                                                                    <a href="https://thethemedemo.com/phuler/product/glory-of-the-snow-2/">Glory of the Snow</a>
+                                                                                </h4>
+                                                                                <div class="product-price-wrapper">
+
+                                                                                    <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>150.00</bdi>
+                                                                                    </span>
+                                                                                    </del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>100.00</bdi></span></ins></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-item bg-white">
+                                                                        <div class="product-wrapper">
+                                                                            <div class="product-img image-wrap">
+                                                                                <a href="https://thethemedemo.com/phuler/product/pearly-everlasting/" class="image">
+                                                    <img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/1-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                                </a>
+                                                                                <div class="product-action">
+                                                                                    <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                            data-product_id="166"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=166" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                        data-product_id="166" data-product_sku="" aria-label="Add &ldquo;Pearly Everlasting&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                    <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="166" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                                        <i class="icon-magnifier-add"></i>
+                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="product-content text-center">
+                                                                                <h4>
+                                                                                    <a href="https://thethemedemo.com/phuler/product/pearly-everlasting/">Pearly Everlasting</a>
+                                                                                </h4>
+                                                                                <div class="product-price-wrapper">
+
+                                                                                    <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>100.00</bdi>
+                                                                                    </span>
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade " id="homeFeatured_Products3">
+                                                                <div class="featured-product-active owl-carousel product-nav">
+                                                                    <div class="product-item bg-white">
+                                                                        <div class="product-wrapper">
+                                                                            <div class="product-img image-wrap">
+                                                                                <a href="https://thethemedemo.com/phuler/product/jack-in-the-pulpit/" class="image">
+                                                    
+	<span class="onsale">Sale</span>
+	<img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/7-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                                </a>
+                                                                                <div class="product-action">
+                                                                                    <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                            data-product_id="470"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=470" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                        data-product_id="470" data-product_sku="" aria-label="Add &ldquo;Jack in the Pulpit&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                    <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="470" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                                        <i class="icon-magnifier-add"></i>
+                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="product-content text-center">
+                                                                                <h4>
+                                                                                    <a href="https://thethemedemo.com/phuler/product/jack-in-the-pulpit/">Jack in the Pulpit</a>
+                                                                                </h4>
+                                                                                <div class="product-price-wrapper">
+
+                                                                                    <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>165.00</bdi>
+                                                                                    </span>
+                                                                                    </del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>155.00</bdi></span></ins></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-item bg-white">
+                                                                        <div class="product-wrapper">
+                                                                            <div class="product-img image-wrap">
+                                                                                <a href="https://thethemedemo.com/phuler/product/flowers-bouquet/" class="image">
+                                                    
+	<span class="onsale">Sale</span>
+	<img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/6-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                                </a>
+                                                                                <div class="product-action">
+                                                                                    <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                            data-product_id="457"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=457" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                        data-product_id="457" data-product_sku="" aria-label="Add &ldquo;Flowers Bouquet&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                    <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="457" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                                        <i class="icon-magnifier-add"></i>
+                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="product-content text-center">
+                                                                                <h4>
+                                                                                    <a href="https://thethemedemo.com/phuler/product/flowers-bouquet/">Flowers Bouquet</a>
+                                                                                </h4>
+                                                                                <div class="product-price-wrapper">
+
+                                                                                    <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>80.00</bdi>
+                                                                                    </span>
+                                                                                    </del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>75.00</bdi></span></ins></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-item bg-white">
+                                                                        <div class="product-wrapper">
+                                                                            <div class="product-img image-wrap">
+                                                                                <a href="https://thethemedemo.com/phuler/product/glory-of-the-snow-2/" class="image">
+                                                    
+	<span class="onsale">Sale</span>
+	<img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/2-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                                </a>
+                                                                                <div class="product-action">
+                                                                                    <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                            data-product_id="167"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=167" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                        data-product_id="167" data-product_sku="" aria-label="Add &ldquo;Glory of the Snow&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                    <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="167" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                                        <i class="icon-magnifier-add"></i>
+                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="product-content text-center">
+                                                                                <h4>
+                                                                                    <a href="https://thethemedemo.com/phuler/product/glory-of-the-snow-2/">Glory of the Snow</a>
+                                                                                </h4>
+                                                                                <div class="product-price-wrapper">
+
+                                                                                    <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>150.00</bdi>
+                                                                                    </span>
+                                                                                    </del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>100.00</bdi></span></ins></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-item bg-white">
+                                                                        <div class="product-wrapper">
+                                                                            <div class="product-img image-wrap">
+                                                                                <a href="https://thethemedemo.com/phuler/product/golden-marguerite/" class="image">
+                                                    
+	<span class="onsale">Sale</span>
+	<img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/6-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                                </a>
+                                                                                <div class="product-action">
+                                                                                    <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                            data-product_id="165"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=165" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                        data-product_id="165" data-product_sku="" aria-label="Add &ldquo;Golden Marguerite&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                    <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="165" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                                        <i class="icon-magnifier-add"></i>
+                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="product-content text-center">
+                                                                                <h4>
+                                                                                    <a href="https://thethemedemo.com/phuler/product/golden-marguerite/">Golden Marguerite</a>
+                                                                                </h4>
+                                                                                <div class="product-price-wrapper">
+
+                                                                                    <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>120.00</bdi>
+                                                                                    </span>
+                                                                                    </del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>100.00</bdi></span></ins></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-item bg-white">
+                                                                        <div class="product-wrapper">
+                                                                            <div class="product-img image-wrap">
+                                                                                <a href="https://thethemedemo.com/phuler/product/glory-of-the-snow/" class="image">
+                                                    <img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/8-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                                </a>
+                                                                                <div class="product-action">
+                                                                                    <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                            data-product_id="163"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=163" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                        data-product_id="163" data-product_sku="" aria-label="Add &ldquo;Glory of the Snow&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                    <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="163" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                                        <i class="icon-magnifier-add"></i>
+                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="product-content text-center">
+                                                                                <h4>
+                                                                                    <a href="https://thethemedemo.com/phuler/product/glory-of-the-snow/">Glory of the Snow</a>
+                                                                                </h4>
+                                                                                <div class="product-price-wrapper">
+
+                                                                                    <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>100.00</bdi>
+                                                                                    </span>
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <script type="text/javascript">
+                                                            (function($) {
+
+                                                                var _slitems = 4;
+                                                                var _slitems576 = 2;
+                                                                var _slitems768 = 3;
+                                                                var _slitems992 = 3;
+                                                                var _slitems1170 = 4;
+                                                                var _arrows_set = true;
+                                                                var _dots_set = false;
+                                                                var _autoplay = false;
+
+                                                                /* Best selling active */
+                                                                $('.featured-product-active').owlCarousel({
+                                                                    loop: true,
+                                                                    nav: _arrows_set,
+                                                                    dots: _dots_set,
+                                                                    autoplay: _autoplay,
+                                                                    autoplayTimeout: 5000,
+                                                                    navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
+                                                                    item: _slitems,
+                                                                    margin: 30,
+                                                                    responsive: {
+                                                                        0: {
+                                                                            items: 1
+                                                                        },
+                                                                        576: {
+                                                                            items: _slitems576
+                                                                        },
+                                                                        768: {
+                                                                            items: _slitems768
+                                                                        },
+                                                                        992: {
+                                                                            items: _slitems992
+                                                                        },
+                                                                        1200: {
+                                                                            items: _slitems1170
+                                                                        }
+                                                                    }
+                                                                })
+
+                                                            })(jQuery);
+                                                        </script>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="elementor-section elementor-top-section elementor-element elementor-element-91d44a6 elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="91d44a6" data-element_type="section"
+                            data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+                            <div class="elementor-container elementor-column-gap-no">
+                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bb2ad3c" data-id="bb2ad3c" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-b39a8e2 elementor-widget elementor-widget-Testimonials" data-id="b39a8e2" data-element_type="widget" data-widget_type="Testimonials.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="testimonials-area bg-img pt-120 pb-115" style="background-image:url(https://thethemedemo.com/phuler/wp-content/uploads/2018/08/bg-1.jpg);">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-lg-7 col-md-12 ml-auto col-12">
+                                                                <div class="testimonial-active owl-carousel">
+
+                                                                    <div class="single-testimonial text-center">
+                                                                        <div class="testimonial-img">
+                                                                            <img decoding="async" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/testi.png" title="testi" alt="testi" loading="lazy" /> </div>
+
+                                                                        <p>When a beautiful design is combined with powerful technology,<br> it truly is an artwork. I love how my website operates and looks with this theme. <br>Thank you for the awesome product.
+                                                                            </p>
+                                                                        <h4>Samia Robiul</h4>
+                                                                    </div>
+                                                                    <div class="single-testimonial text-center">
+                                                                        <div class="testimonial-img">
+                                                                            <img decoding="async" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/testi.png" title="testi" alt="testi" loading="lazy" /> </div>
+
+                                                                        <p>“ Lorem ipsum dolor sit, con adipisicing elit, sed do eiusmod tempor <br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br>exercitati ullamco
+                                                                            laboris ” </p>
+                                                                        <h4>Tayeb Rayed</h4>
+                                                                    </div>
+                                                                    <div class="single-testimonial text-center">
+                                                                        <div class="testimonial-img">
+                                                                            <img decoding="async" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/testi.png" title="testi" alt="testi" loading="lazy" /> </div>
+
+                                                                        <p>When a beautiful design is combined with powerful ,<br> technology it truly is an artwork. I love how my website operates and looks with this <br>theme. Thank you for the awesome
+                                                                            product. </p>
+                                                                        <h4>Hamim Ahamed</h4>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="elementor-section elementor-top-section elementor-element elementor-element-7aa2a6b elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="7aa2a6b" data-element_type="section"
+                            data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+                            <div class="elementor-container elementor-column-gap-no">
+                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-39216a6" data-id="39216a6" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-73fb873 elementor-widget elementor-widget-Bestsalingproduct" data-id="73fb873" data-element_type="widget" data-widget_type="Bestsalingproduct.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="best-selling-product pt-70 pb-75 gray-bg">
+                                                    <div class="container">
+                                                        <div class="product-top-bar section-border mb-35">
+                                                            <div class="section-title-wrap">
+                                                                <h3 class="section-title section-bg-gray">Best Selling Products</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="best-selling-wrap">
+                                                            <div class="best-selling-active owl-carousel product-nav">
+                                                                <div class="single-best-selling">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-6 col-xl-5 col-md-6">
+                                                                            <div class="single-best-img">
+                                                                                <img decoding="async" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/deal-1.png" title="deal-1" alt="deal-1" loading="lazy" /> </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-xl-7 col-md-6">
+                                                                            <div class="deals-content text-center deal-mrg">
+                                                                                <img decoding="async" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/deals-2.png" alt="best seling product">
+                                                                                <h2>Hot Deal ! Sale Up To <span>20% Off</span> </h2>
+                                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+                                                                                <div class="timer timer-style">
+                                                                                    <div data-countdown="2024/12/01"></div>
+                                                                                </div>
+                                                                                <div class="deals-btn"><a href="" rel="nofollow"> Shop Now</a></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="single-best-selling">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-6 col-xl-5 col-md-6">
+                                                                            <div class="single-best-img">
+                                                                                <img decoding="async" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/deal-1.png" title="deal-1" alt="deal-1" loading="lazy" /> </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-xl-7 col-md-6">
+                                                                            <div class="deals-content text-center deal-mrg">
+                                                                                <img decoding="async" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/deals-2.png" alt="best seling product">
+                                                                                <h2>Hot Deal ! Sale Up To <span>20% Off</span> </h2>
+                                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+                                                                                <div class="timer timer-style">
+                                                                                    <div data-countdown="2024/12/01"></div>
+                                                                                </div>
+                                                                                <div class="deals-btn"><a href="" rel="nofollow"> Shop Now</a></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="elementor-section elementor-top-section elementor-element elementor-element-5d753b6 hot-flower elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5d753b6" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0dadb7f" data-id="0dadb7f" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-e4b1805 elementor-widget elementor-widget-phuler-product-addons" data-id="e4b1805" data-element_type="widget" data-widget_type="phuler-product-addons.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="product-area pt-60 pb-50">
+                                                    <div class="container">
+                                                        <div class="product-top-bar section-border mb-35">
+                                                            <div class="section-title-wrap">
+                                                                <h3 class="section-title section-bg-white"> Hot Flower</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="featured-product-active hot-flower owl-carousel product-nav">
+                                                            <div class="slide-item">
+                                                                <div class="product-item bg-white">
+                                                                    <div class="product-wrapper">
+                                                                        <div class="product-img image-wrap">
+                                                                            <a href="https://thethemedemo.com/phuler/product/flowers-bouquet-pink-2/" class="image">
+                                    
+	<span class="onsale">Sale</span>
+	<img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/5-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                </a>
+                                                                            <div class="product-action">
+                                                                                <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                        data-product_id="474"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=474" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                    data-product_id="474" data-product_sku="" aria-label="Add &ldquo;Flowers Bouquet Pink&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="474" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                        <i class="icon-magnifier-add"></i>
+                                    </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="product-content text-center">
+                                                                            <h4>
+                                                                                <a href="https://thethemedemo.com/phuler/product/flowers-bouquet-pink-2/">Flowers Bouquet Pink</a>
+                                                                            </h4>
+                                                                            <div class="product-price-wrapper">
+
+                                                                                <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>350.00</bdi>
+                                                                                </span>
+                                                                                </del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>320.00</bdi></span></ins></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="slide-item">
+                                                                <div class="product-item bg-white">
+                                                                    <div class="product-wrapper">
+                                                                        <div class="product-img image-wrap">
+                                                                            <a href="https://thethemedemo.com/phuler/product/dutchmans-breeches/" class="image">
+                                    
+	<span class="onsale">Sale</span>
+	<img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/3-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                </a>
+                                                                            <div class="product-action">
+                                                                                <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                        data-product_id="471"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=471" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                    data-product_id="471" data-product_sku="" aria-label="Add &ldquo;Dutchman&#039;s Breeches&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="471" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                        <i class="icon-magnifier-add"></i>
+                                    </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="product-content text-center">
+                                                                            <h4>
+                                                                                <a href="https://thethemedemo.com/phuler/product/dutchmans-breeches/">Dutchman&#8217;s Breeches</a>
+                                                                            </h4>
+                                                                            <div class="product-price-wrapper">
+
+                                                                                <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>85.00</bdi>
+                                                                                </span>
+                                                                                </del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>80.00</bdi></span></ins></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="slide-item">
+                                                                <div class="product-item bg-white">
+                                                                    <div class="product-wrapper">
+                                                                        <div class="product-img image-wrap">
+                                                                            <a href="https://thethemedemo.com/phuler/product/jack-in-the-pulpit/" class="image">
+                                    
+	<span class="onsale">Sale</span>
+	<img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/7-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                </a>
+                                                                            <div class="product-action">
+                                                                                <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                        data-product_id="470"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=470" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                    data-product_id="470" data-product_sku="" aria-label="Add &ldquo;Jack in the Pulpit&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="470" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                        <i class="icon-magnifier-add"></i>
+                                    </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="product-content text-center">
+                                                                            <h4>
+                                                                                <a href="https://thethemedemo.com/phuler/product/jack-in-the-pulpit/">Jack in the Pulpit</a>
+                                                                            </h4>
+                                                                            <div class="product-price-wrapper">
+
+                                                                                <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>165.00</bdi>
+                                                                                </span>
+                                                                                </del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>155.00</bdi></span></ins></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="slide-item">
+                                                                <div class="product-item bg-white">
+                                                                    <div class="product-wrapper">
+                                                                        <div class="product-img image-wrap">
+                                                                            <a href="https://thethemedemo.com/phuler/product/glory-of-the-snow-3/" class="image">
+                                    
+	<span class="onsale">Sale</span>
+	<img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/3-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                </a>
+                                                                            <div class="product-action">
+                                                                                <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                        data-product_id="469"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=469" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                    data-product_id="469" data-product_sku="" aria-label="Add &ldquo;Glory of the Snow&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="469" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                        <i class="icon-magnifier-add"></i>
+                                    </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="product-content text-center">
+                                                                            <h4>
+                                                                                <a href="https://thethemedemo.com/phuler/product/glory-of-the-snow-3/">Glory of the Snow</a>
+                                                                            </h4>
+                                                                            <div class="product-price-wrapper">
+
+                                                                                <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>115.00</bdi>
+                                                                                </span>
+                                                                                </del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>110.00</bdi></span></ins></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="slide-item">
+                                                                <div class="product-item bg-white">
+                                                                    <div class="product-wrapper">
+                                                                        <div class="product-img image-wrap">
+                                                                            <a href="https://thethemedemo.com/phuler/product/polka-dot-plant/" class="image">
+                                    
+	<span class="onsale">Sale</span>
+	<img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/8-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                </a>
+                                                                            <div class="product-action">
+                                                                                <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                        data-product_id="468"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=468" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                    data-product_id="468" data-product_sku="" aria-label="Add &ldquo;Polka Dot Plant&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="468" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                        <i class="icon-magnifier-add"></i>
+                                    </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="product-content text-center">
+                                                                            <h4>
+                                                                                <a href="https://thethemedemo.com/phuler/product/polka-dot-plant/">Polka Dot Plant</a>
+                                                                            </h4>
+                                                                            <div class="product-price-wrapper">
+
+                                                                                <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>60.00</bdi>
+                                                                                </span>
+                                                                                </del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>55.00</bdi></span></ins></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="slide-item">
+                                                                <div class="product-item bg-white">
+                                                                    <div class="product-wrapper">
+                                                                        <div class="product-img image-wrap">
+                                                                            <a href="https://thethemedemo.com/phuler/product/flowers-bouquet/" class="image">
+                                    
+	<span class="onsale">Sale</span>
+	<img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/6-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                </a>
+                                                                            <div class="product-action">
+                                                                                <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                        data-product_id="457"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=457" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                    data-product_id="457" data-product_sku="" aria-label="Add &ldquo;Flowers Bouquet&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="457" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                        <i class="icon-magnifier-add"></i>
+                                    </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="product-content text-center">
+                                                                            <h4>
+                                                                                <a href="https://thethemedemo.com/phuler/product/flowers-bouquet/">Flowers Bouquet</a>
+                                                                            </h4>
+                                                                            <div class="product-price-wrapper">
+
+                                                                                <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>80.00</bdi>
+                                                                                </span>
+                                                                                </del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>75.00</bdi></span></ins></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="slide-item">
+                                                                <div class="product-item bg-white">
+                                                                    <div class="product-wrapper">
+                                                                        <div class="product-img image-wrap">
+                                                                            <a href="https://thethemedemo.com/phuler/product/glory-of-the-snow-2/" class="image">
+                                    
+	<span class="onsale">Sale</span>
+	<img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/2-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                </a>
+                                                                            <div class="product-action">
+                                                                                <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                        data-product_id="167"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=167" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                    data-product_id="167" data-product_sku="" aria-label="Add &ldquo;Glory of the Snow&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="167" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                        <i class="icon-magnifier-add"></i>
+                                    </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="product-content text-center">
+                                                                            <h4>
+                                                                                <a href="https://thethemedemo.com/phuler/product/glory-of-the-snow-2/">Glory of the Snow</a>
+                                                                            </h4>
+                                                                            <div class="product-price-wrapper">
+
+                                                                                <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>150.00</bdi>
+                                                                                </span>
+                                                                                </del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>100.00</bdi></span></ins></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="slide-item">
+                                                                <div class="product-item bg-white">
+                                                                    <div class="product-wrapper">
+                                                                        <div class="product-img image-wrap">
+                                                                            <a href="https://thethemedemo.com/phuler/product/pearly-everlasting/" class="image">
+                                    <img loading="lazy" width="270" height="310" src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/1-270x310.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" />                                </a>
+                                                                            <div class="product-action">
+                                                                                <div class="action-same yith-wcwl-add-to-wishlist"><a href="https://thethemedemo.com/phuler/wishsuite/" class="wishsuite-btn wishsuite-button wishsuite-shop-after_cart_btn wishsuite-product-after_cart_btn" data-added-text="&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;"
+                                                                                        data-product_id="166"><i class="icon-heart"></i></a></div> <a href="?add-to-cart=166" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                    data-product_id="166" data-product_sku="" aria-label="Add &ldquo;Pearly Everlasting&rdquo; to your cart" aria-describedby="" rel="nofollow"><i class="icon-handbag"></i> </a>                                                                                <a title="Quick View" data-toggle="modal" data-target="#exampleModal" data-quick-id="166" class="action-compare action-eye quickview" href="javascript:void(0);">
+                                        <i class="icon-magnifier-add"></i>
+                                    </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="product-content text-center">
+                                                                            <h4>
+                                                                                <a href="https://thethemedemo.com/phuler/product/pearly-everlasting/">Pearly Everlasting</a>
+                                                                            </h4>
+                                                                            <div class="product-price-wrapper">
+
+                                                                                <span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&pound;</span>100.00</bdi>
+                                                                                </span>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <script type="text/javascript">
+                                                    (function($) {
+
+                                                        var _slitems = 4;
+                                                        var _arrows_set = true;
+                                                        var _dots_set = false;
+                                                        var _autoplay = false;
+
+                                                        /* Best selling active */
+                                                        $('.featured-product-active').owlCarousel({
+                                                            loop: true,
+                                                            nav: _arrows_set,
+                                                            dots: _dots_set,
+                                                            autoplay: _autoplay,
+                                                            autoplayTimeout: 5000,
+                                                            navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
+                                                            item: _slitems,
+                                                            margin: 30,
+                                                            responsive: {
+                                                                0: {
+                                                                    items: 1
+                                                                },
+                                                                576: {
+                                                                    items: 2
+                                                                },
+                                                                768: {
+                                                                    items: 3
+                                                                },
+                                                                992: {
+                                                                    items: 3
+                                                                },
+                                                                1100: {
+                                                                    items: 3
+                                                                },
+                                                                1200: {
+                                                                    items: 4
+                                                                }
+                                                            }
+                                                        })
+
+                                                    })(jQuery);
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="elementor-section elementor-top-section elementor-element elementor-element-269d8dd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="269d8dd" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8355a79" data-id="8355a79" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-6999570 elementor-widget elementor-widget-banner-large" data-id="6999570" data-element_type="widget" data-widget_type="banner-large.default">
+                                            <div class="elementor-widget-container">
+
+                                                <div class="new-year-offer-area pb-75">
+                                                    <div class="container">
+                                                        <div class="new-year-offer-wrap pt-70 pb-75 bg-img" style="background-image:url(https://thethemedemo.com/phuler/wp-content/uploads/2018/08/banner-4.jpg);">
+                                                            <div class="new-year-offer-content text-center">
+                                                                <h4>New Year Offer</h4>
+                                                                <h3>Creamer Coffee Protein Meal</h3> <a href="#" rel="nofollow">Discover now</a> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- #primary -->
+
+            </div>
+            <!-- #content -->
+
+            <footer class="footer-area footer-wrapper default-footer-wrapper">
+                <div class="footer-top gray-bg-3">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-3 col-md-6 col-12">
+
+                                <div id="phuler_author_about_widget-2" class="footer-widget widget widget_phuler_author_about_widget">
+                                    <div class="author--info--wrap">
+
+
+                                        <div class="footer-widget footer-widget-red footer-black-color">
+
+
+                                            <h4>About Us</h4>
+
+
+                                            <div class="footer-about">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididun</p>
+                                                <div class="footer-contact mt-20">
+                                                    <ul>
+                                                        <li>Address: 123 Main Street, Anytown, CA 12345 - USA.</li>
+                                                        <li>Telephone: (012) 800 456 789-987 </li>
+                                                        <li>Email: <a href="#"><span class="__cf_email__" data-cfemail="bdc4d2c8cfd0dcd4d1fdd8c5dcd0cdd1d893ded2d0">[email&#160;protected]</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="social-icon">
+                                                <ul>
+                                                    <li>
+                                                        <a class="facebook" href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a class="twitter" href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="youtube" href="#" title="youtube"><i class="fa fa-youtube"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="linked" href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="pinterest" href="#" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div id="nav_menu-4" class="footer-widget widget widget_nav_menu">
+                                    <h4>Information</h4>
+                                    <nav class="menu-information-container" aria-label="Information">
+                                        <ul id="menu-information" class="menu">
+                                            <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="https://thethemedemo.com/phuler/my-account/">My account</a></li>
+                                            <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="https://thethemedemo.com/phuler/checkout/">Checkout</a></li>
+                                            <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="https://thethemedemo.com/phuler/cart/">Cart</a></li>
+                                            <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="https://thethemedemo.com/phuler/shop/">Shop</a></li>
+                                            <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="https://thethemedemo.com/phuler/sample-page/">Sample Page</a></li>
+                                            <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="https://thethemedemo.com/phuler/checkout/">Checkout</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div id="nav_menu-3" class="footer-widget widget widget_nav_menu">
+                                    <h4>My Account</h4>
+                                    <nav class="menu-my-account-container" aria-label="My Account">
+                                        <ul id="menu-my-account" class="menu">
+                                            <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="https://thethemedemo.com/phuler/my-account/">My account</a></li>
+                                            <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="https://thethemedemo.com/phuler/checkout/">Checkout</a></li>
+                                            <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="https://thethemedemo.com/phuler/cart/">Cart</a></li>
+                                            <li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="https://thethemedemo.com/phuler/shop/">Shop</a></li>
+                                            <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="https://thethemedemo.com/phuler/sample-page/">Sample Page</a></li>
+                                            <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="https://thethemedemo.com/phuler/checkout/">Checkout</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div id="mc4wp_form_widget-2" class="footer-widget widget widget_mc4wp_form_widget">
+                                    <h4>Join Our Newsletter Now</h4>
+                                    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                                    <script>
+                                        (function() {
+                                            window.mc4wp = window.mc4wp || {
+                                                listeners: [],
+                                                forms: {
+                                                    on: function(evt, cb) {
+                                                        window.mc4wp.listeners.push({
+                                                            event: evt,
+                                                            callback: cb
+                                                        });
+                                                    }
+                                                }
+                                            }
+                                        })();
+                                    </script>
+                                    <!-- Mailchimp for WordPress v4.9.9 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+                                    <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-18" method="post" data-id="18" data-name="newsletter">
+                                        <div class="mc4wp-form-fields">
+                                            <div class="footer-newsletter">
+                                                <p>Get E-mail updates about our latest shop and special offers.</p>
+                                                <div id="mc_embed_signup" class="subscribe-form">
+                                                    <div>
+                                                        <div id="mc_embed_signup_scroll" class="mc-form">
+                                                            <input type="email" name="EMAIL" class="email" placeholder="Your email address" required />
+                                                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                                            <div class="mc-news"><input type="text"></div>
+                                                            <div class="clear-2">
+                                                                <input type="submit" value="Subscribe" id="mc-embedded-subscribe" class="button" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp"
+                                            value="1708601185" /><input type="hidden" name="_mc4wp_form_id" value="18" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" />
+                                        <div class="mc4wp-response"></div>
+                                    </form>
+                                    <!-- / Mailchimp for WordPress Plugin -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--End of Footer Widget Area-->
+                <div class="default-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="default-footer-content-wrap">
+                                    <div class="center-block footer-copyright-text">
+                                        Copyright &copy; 2024 Phuler. All Rights Reserved. </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="payment-img f-right">
+                                    <a href="#">
+                            <img src="https://thethemedemo.com/phuler/wp-content/uploads/2018/08/payment.png" alt="payment method">
+                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div id="back-to-top"><i class="fa fa-angle-up"></i></div>
+        </div>
+        <!-- #page -->
+    </div>
+
+    <script>
+        (function() {
+            function maybePrefixUrlField() {
+                const value = this.value.trim()
+                if (value !== '' && value.indexOf('http') !== 0) {
+                    this.value = 'http://' + value
+                }
+            }
+
+            const urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]')
+            for (let j = 0; j < urlFields.length; j++) {
+                urlFields[j].addEventListener('blur', maybePrefixUrlField)
+            }
+        })();
+    </script>
+    <div class="htcompare-popup">
+        <div class="htcompare-popup-content-area"><span class="htcompare-popup-close">&nbsp;</span>
+            <div class="htcompare-table">
+                <div class="htcompare-return-to-shop"><a href="https://thethemedemo.com/phuler/shop/" class="button">Return to shop</a></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        (function() {
+            var c = document.body.className;
+            c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+            document.body.className = c;
+        })();
+    </script>
+    <script type="text/template" id="tmpl-variation-template">
+        <div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}</div>
+        <div class="woocommerce-variation-price">{{{ data.variation.price_html }}}</div>
+        <div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}</div>
+    </script>
+    <script type="text/template" id="tmpl-unavailable-variation-template">
+        <p>Sorry, this product is unavailable. Please choose a different combination.</p>
+    </script>
+    <link rel='stylesheet' id='wishsuite-frontend-css' href='https://thethemedemo.com/phuler/wp-content/plugins/wishsuite/assets/css/frontend.css?ver=1.3.7' media='all' />
+    <link rel='stylesheet' id='evercompare-frontend-css' href='https://thethemedemo.com/phuler/wp-content/plugins/ever-compare/assets/css/frontend.min.css?ver=1.2.5' media='all' />
+    <script src='https://thethemedemo.com/phuler/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8.2' id='swv-js'></script>
+    <script id='contact-form-7-js-extra'>
+        var wpcf7 = {
+            "api": {
+                "root": "https:\/\/thethemedemo.com\/phuler\/wp-json\/",
+                "namespace": "contact-form-7\/v1"
+            },
+            "cached": "1"
+        };
+    </script>
+    <script src='https://thethemedemo.com/phuler/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.8.2' id='contact-form-7-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.2.1' id='jquery-blockui-js'></script>
+    <script id='wc-add-to-cart-js-extra'>
+        var wc_add_to_cart_params = {
+            "ajax_url": "\/phuler\/wp-admin\/admin-ajax.php",
+            "wc_ajax_url": "\/phuler\/?wc-ajax=%%endpoint%%",
+            "i18n_view_cart": "View cart",
+            "cart_url": "https:\/\/thethemedemo.com\/phuler\/cart\/",
+            "is_cart": "",
+            "cart_redirect_after_add": "no"
+        };
+    </script>
+    <script src='https://thethemedemo.com/phuler/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=8.2.1' id='wc-add-to-cart-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.8.2.1' id='js-cookie-js'></script>
+    <script id='woocommerce-js-extra'>
+        var woocommerce_params = {
+            "ajax_url": "\/phuler\/wp-admin\/admin-ajax.php",
+            "wc_ajax_url": "\/phuler\/?wc-ajax=%%endpoint%%"
+        };
+    </script>
+    <script src='https://thethemedemo.com/phuler/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.2.1' id='woocommerce-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/themes/phuler/js/popper.min.js?ver=1.0.0' id='popper-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/themes/phuler/js/bootstrap.min.js?ver=4.0.0' id='bootstrap-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/themes/phuler/js/waypoints.js?ver=4.0.1' id='waypoints-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/themes/phuler/js/isotope.pkgd.min.js?ver=3.0.3' id='isotope-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/themes/phuler/js/jquery.magnific-popup.min.js?ver=1.1.0' id='magnific-popup-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/themes/phuler/js/counterup.js?ver=1.1.2' id='counterup-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/themes/phuler/js/jquery.countdown.min.js?ver=1.1.3' id='countdown-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/themes/phuler/js/hover3d.js?ver=1.1.8' id='hover3d-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/themes/phuler/js/jquery-elevatezoom.js?ver=3.1.8' id='elevateZoom-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/themes/phuler/js/jquery.fancybox.min.js?ver=3.1.8' id='fancybox-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/themes/phuler/js/wow-min.js?ver=1.1.2' id='wow-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/themes/phuler/js/navigation.js?ver=6.3.3' id='phuler-navigation-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/themes/phuler/js/skip-link-focus-fix.js?ver=6.3.3' id='skip-link-focus-fix-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/themes/phuler/js/jquery.meanmenu.min.js?ver=6.3.3' id='mean-menu-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/themes/phuler/js/retina.min.js?ver=1.3.0' id='retina-min-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/themes/phuler/js/jquery.onepage.nav.js?ver=6.3.3' id='onepage-nav-js'></script>
+    <script id='phuler-main-js-extra'>
+        var mobile_menu_data = {
+            "menu_width": "991"
+        };
+    </script>
+    <script src='https://thethemedemo.com/phuler/wp-content/themes/phuler/js/main.js?ver=1.0.0' id='phuler-main-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/plugins/variation-swatches-for-woocommerce/assets/js/frontend.js?ver=2.2.0' id='tawcvs-frontend-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-includes/js/underscore.min.js?ver=1.13.4' id='underscore-js'></script>
+    <script id='wp-util-js-extra'>
+        var _wpUtilSettings = {
+            "ajax": {
+                "url": "\/phuler\/wp-admin\/admin-ajax.php"
+            }
+        };
+    </script>
+    <script src='https://thethemedemo.com/phuler/wp-includes/js/wp-util.min.js?ver=6.3.3' id='wp-util-js'></script>
+    <script id='wc-add-to-cart-variation-js-extra'>
+        var wc_add_to_cart_variation_params = {
+            "wc_ajax_url": "\/phuler\/?wc-ajax=%%endpoint%%",
+            "i18n_no_matching_variations_text": "Sorry, no products matched your selection. Please choose a different combination.",
+            "i18n_make_a_selection_text": "Please select some product options before adding this product to your cart.",
+            "i18n_unavailable_text": "Sorry, this product is unavailable. Please choose a different combination."
+        };
+    </script>
+    <script src='https://thethemedemo.com/phuler/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js?ver=8.2.1' id='wc-add-to-cart-variation-js'></script>
+    <script id='wishsuite-frontend-js-extra'>
+        var WishSuite = {
+            "ajaxurl": "https:\/\/thethemedemo.com\/phuler\/wp-admin\/admin-ajax.php",
+            "option_data": {
+                "after_added_to_cart": "on"
+            },
+            "nonce": "21b41d79c3"
+        };
+    </script>
+    <script src='https://thethemedemo.com/phuler/wp-content/plugins/wishsuite/assets/js/frontend.js?ver=1.3.7' id='wishsuite-frontend-js'></script>
+    <script defer src='https://thethemedemo.com/phuler/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.9.9' id='mc4wp-forms-api-js'></script>
+    <script id='evercompare-frontend-js-extra'>
+        var evercompare = {
+            "ajaxurl": "https:\/\/thethemedemo.com\/phuler\/wp-admin\/admin-ajax.php",
+            "popup": "yes",
+            "option_data": []
+        };
+    </script>
+    <script src='https://thethemedemo.com/phuler/wp-content/plugins/ever-compare/assets/js/frontend.min.js?ver=1.2.5' id='evercompare-frontend-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.16.6' id='elementor-webpack-runtime-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.16.6' id='elementor-frontend-modules-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+    <script src='https://thethemedemo.com/phuler/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+    <script id="elementor-frontend-js-before">
+        var elementorFrontendConfig = {
+            "environmentMode": {
+                "edit": false,
+                "wpPreview": false,
+                "isScriptDebug": false
+            },
+            "i18n": {
+                "shareOnFacebook": "Share on Facebook",
+                "shareOnTwitter": "Share on Twitter",
+                "pinIt": "Pin it",
+                "download": "Download",
+                "downloadImage": "Download image",
+                "fullscreen": "Fullscreen",
+                "zoom": "Zoom",
+                "share": "Share",
+                "playVideo": "Play Video",
+                "previous": "Previous",
+                "next": "Next",
+                "close": "Close",
+                "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right",
+                "a11yCarouselPrevSlideMessage": "Previous slide",
+                "a11yCarouselNextSlideMessage": "Next slide",
+                "a11yCarouselFirstSlideMessage": "This is the first slide",
+                "a11yCarouselLastSlideMessage": "This is the last slide",
+                "a11yCarouselPaginationBulletMessage": "Go to slide"
+            },
+            "is_rtl": false,
+            "breakpoints": {
+                "xs": 0,
+                "sm": 480,
+                "md": 768,
+                "lg": 1025,
+                "xl": 1440,
+                "xxl": 1600
+            },
+            "responsive": {
+                "breakpoints": {
+                    "mobile": {
+                        "label": "Mobile Portrait",
+                        "value": 767,
+                        "default_value": 767,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "mobile_extra": {
+                        "label": "Mobile Landscape",
+                        "value": 880,
+                        "default_value": 880,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "tablet": {
+                        "label": "Tablet Portrait",
+                        "value": 1024,
+                        "default_value": 1024,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "tablet_extra": {
+                        "label": "Tablet Landscape",
+                        "value": 1200,
+                        "default_value": 1200,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "laptop": {
+                        "label": "Laptop",
+                        "value": 1366,
+                        "default_value": 1366,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "widescreen": {
+                        "label": "Widescreen",
+                        "value": 2400,
+                        "default_value": 2400,
+                        "direction": "min",
+                        "is_enabled": false
+                    }
+                }
+            },
+            "version": "3.16.6",
+            "is_static": false,
+            "experimentalFeatures": {
+                "e_dom_optimization": true,
+                "e_optimized_assets_loading": true,
+                "additional_custom_breakpoints": true,
+                "landing-pages": true
+            },
+            "urls": {
+                "assets": "https:\/\/thethemedemo.com\/phuler\/wp-content\/plugins\/elementor\/assets\/"
+            },
+            "swiperClass": "swiper-container",
+            "settings": {
+                "page": [],
+                "editorPreferences": []
+            },
+            "kit": {
+                "active_breakpoints": ["viewport_mobile", "viewport_tablet"],
+                "global_image_lightbox": "yes",
+                "lightbox_enable_counter": "yes",
+                "lightbox_enable_fullscreen": "yes",
+                "lightbox_enable_zoom": "yes",
+                "lightbox_enable_share": "yes",
+                "lightbox_title_src": "title",
+                "lightbox_description_src": "description"
+            },
+            "post": {
+                "id": 166,
+                "title": "Phuler%20%E2%80%93%20WooCommerce%20WordPress%20Theme",
+                "excerpt": "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.",
+                "featuredImage": "https:\/\/thethemedemo.com\/phuler\/wp-content\/uploads\/2018\/08\/1-1024x960.jpg"
+            }
+        };
+    </script>
+    <script src='https://thethemedemo.com/phuler/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.16.6' id='elementor-frontend-js'></script>
+
+</body>
+
+</html>
